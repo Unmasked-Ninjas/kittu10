@@ -9,7 +9,7 @@ import pic4 from "../assets/photos/pic4-gemini.jpeg";
 import pic5 from "../assets/photos/pic5-ananda.jpeg";
 import pic7 from "../assets/photos/pic7-surusuru.jpeg";
 import pic8 from "../assets/photos/pic8-mukh-kuchheko.jpeg";
-import pic6 from "../assets/photos/pic8-saffy .jpeg";
+import pic6 from "../assets/photos/pic8-saffy.jpeg";
 
 const SPREADS = [
   {
