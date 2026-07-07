@@ -447,7 +447,7 @@ export default function PigeonJourneySection() {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "1rem",
+                  fontSize: "0.8rem",
                   color: "#F0E6D6",
                   lineHeight: 1.7,
                   opacity: 0.95,
@@ -456,7 +456,6 @@ export default function PigeonJourneySection() {
                 <br />
                 <br />
                 <br />
-                
                 "Mero mutu ko tukri, its already been 10 months with you yet i
                 still feel like I'm talking to you for the first time. What a
                 wonderful soul you are and a Lucky MF i am to love you with my
