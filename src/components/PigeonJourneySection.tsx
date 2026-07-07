@@ -468,9 +468,8 @@ export default function PigeonJourneySection() {
                 ❤️😭 so hope yk its all love. Just take care of yourself, look
                 out for yourself, take care of the people you love and most
                 importantly never stop learning and loving mero baby. MUWAAA"
-                <br />
-                <br />
-                <em style={{ color: "#C9A96E" }}>Soon. Soon. Soon.</em>
+                
+              
                 <br />
                 <br />
                 Until then — I love you endlessly.
