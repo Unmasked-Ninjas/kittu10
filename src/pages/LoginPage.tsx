@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+const SHARED_PASSWORD = "kittubaby";
 interface Props {
   onLogin: (name: string) => void;
 }
@@ -163,36 +163,31 @@ export default function LoginPage({ onLogin }: Props) {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+
     if (!password.trim()) return;
+
     setLoading(true);
     setError("");
-    try {
-      const res = await fetch("/api/auth/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ password }),
-      });
-      const data = await res.json();
-      if (res.ok) {
-        localStorage.setItem("ls_token_v2", data.token);
-        setStep("identity");
-      } else {
-        setError("Oopsie! Wrong password 🙈 Try again~");
-        setPassword("");
-        inputRef.current?.focus();
-      }
-    } catch {
-      setError("Something went wrong! Try again 💕");
-    } finally {
-      setLoading(false);
-    }
-  }
 
+    // Small delay for smoother UX
+    await new Promise((resolve) => setTimeout(resolve, 600));
+
+    if (password === SHARED_PASSWORD) {
+      localStorage.setItem("ls_authenticated", "true");
+      setStep("identity");
+    } else {
+      setError("Oopsie! Wrong password 🙈 Try again~");
+      setPassword("");
+      inputRef.current?.focus();
+    }
+
+    setLoading(false);
+  }
   function choosePerson(name: string) {
     localStorage.setItem("ls_user_v2", name);
+    localStorage.setItem("ls_authenticated", "true");
     onLogin(name);
   }
-
   return (
     <div
       className="fixed inset-0 overflow-hidden flex items-center justify-center"

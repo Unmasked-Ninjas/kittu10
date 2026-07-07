@@ -34,10 +34,12 @@ function AuthGate() {
   const [userName, setUserName] = useState<string>("");
 
   useEffect(() => {
-    localStorage.removeItem("ls_token_v2");
-    localStorage.removeItem("ls_user_v2");
-    setUserName("");
-    setAuthed(false);
+    const authenticated = localStorage.getItem("ls_authenticated") === "true";
+
+    const savedName = localStorage.getItem("ls_user_v2") || "";
+
+    setUserName(savedName);
+    setAuthed(authenticated);
   }, []);
 
   if (authed === null) {
