@@ -2,14 +2,14 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Explicit imports from the runnable project's assets
-import pic1 from "../../../../src/assets/photos/pic1.jpeg";
-import pic2 from "../../../../src/assets/photos/pic2-beach.jpeg";
-import pic3 from "../../../../src/assets/photos/pic3-ktm.jpeg";
-import pic4 from "../../../../src/assets/photos/pic4-gemini.jpeg";
-import pic5 from "../../../../src/assets/photos/pic5-ananda.jpeg";
-import pic7 from "../../../../src/assets/photos/pic7-surusuru.jpeg";
-import pic8 from "../../../../src/assets/photos/pic8-mukh-kuchheko.jpeg";
-import pic6 from "../../../../src/assets/photos/pic8-saffy.jpeg"; // Assuming pic6 is also needed
+import pic1 from "../assets/photos/pic1.jpeg";
+import pic2 from "../assets/photos/pic2-beach.jpeg";
+import pic3 from "../assets/photos/pic3-ktm.jpeg";
+import pic4 from "../assets/photos/pic4-gemini.jpeg";
+import pic5 from "../assets/photos/pic5-ananda.jpeg";
+import pic7 from "../assets/photos/pic7-surusuru.jpeg";
+import pic8 from "../assets/photos/pic8-mukh-kuchheko.jpeg";
+import pic6 from "../assets/photos/pic8-saffy .jpeg";
 
 const SPREADS = [
   {
