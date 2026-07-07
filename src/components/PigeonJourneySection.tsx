@@ -453,6 +453,8 @@ export default function PigeonJourneySection() {
                   opacity: 0.95,
                 }}
               >
+                <br />
+                <br />
                 "Mero mutu ko tukri, its already been 10 months with you yet i
                 still feel like I'm talking to you for the first time. What a
                 wonderful soul you are and a Lucky MF i am to love you with my
@@ -468,8 +470,6 @@ export default function PigeonJourneySection() {
                 ❤️😭 so hope yk its all love. Just take care of yourself, look
                 out for yourself, take care of the people you love and most
                 importantly never stop learning and loving mero baby. MUWAAA"
-                
-              
                 <br />
                 <br />
                 Until then — I love you endlessly.
